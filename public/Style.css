@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+
+.container-form {
+  margin: 1.5em 0em;
+}
+
+form {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 70%;
+  margin: auto;
+  display: block;
+  /* border: 1px solid black; */
+
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container-form {
+  box-shadow: 10px 10px 10px hsl(267, 100%, 4%);
+  margin-top: 50px;
+  /* Adjust margin as needed */
+}
+
+.success-message {
+  color: green;
+}
+
+.error-message {
+  color: red;
+}
+
+/* nav bar */
+.nav-link{
+    font-size:larger; 
+}
+
+.img{
+  box-shadow: 10px 10px 20px hsl(266, 100%, 80%);
+
+}
+
+span.text {
+  font-size: xx-large;
+  background: url(http://getwallpapers.com/wallpaper/full/f/9/9/1055963-best-waterfall-backgrounds-1920x1282-smartphone.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent; /* This will hide the text on browsers that don't support background-clip */
+}
+
+ /* request button */
+#requestButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; 
+}
+
+ /* content display  */
+.content_img{
+    position:relative;
+     height:700px;
+     width: 100%;
+     background:rgba(0, 0, 0, 0.5) url("/images/home-3.jpg");
+     display: flex; 
+     background-size: cover;
+     background-blend-mode: darken;
+     background-size:auto;
+     background-repeat: no-repeat;
+ }
+ 
+ 
+ .figure{
+   text-align:center;
+   position: absolute;
+   top:50%;
+   right:50%;
+   transform:translate(50%, -50%);
+   align-items: center;
+ }
+
+p{
+    font-size: medium;
+}
+
+.text{
+    font-size: small;
+}
+
+/* brochure */
+.download-btn{
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* main header */
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+/* carousel display */
+.carousel-item{
+  width: 100%; /* Make the image cover the entire cell */
+  height: 100%; 
+  object-fit: cover; /* Ensure the image covers the entire cell without stretching */
+}
+.carousel-item{
+  min-height: 280px;
+  max-height: 400px;
+}
+ 
+/* button */
+.container{
+  background: #e3ebfe;
+  border-radius: 10px;
+}
+
+tbody,thead{
+  border: rgba(0, 0, 0, 0.368) 2px solid;
+}
+
+/* text blink */
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/*Aminities*/
+.aminities {
+  --color: rgba(30, 30, 30);
+  --bgColor: rgba(245, 245, 245);
+  display: grid;
+}
+
+.aminities{
+  width: min(60rem, 90%);
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+li:nth-child(6n + 1) { --accent-color: #b8df4e }
+li:nth-child(6n + 2) { --accent-color: #4cbccb }
+li:nth-child(6n + 3) { --accent-color: #7197d3 }
+li:nth-child(6n + 4) { --accent-color: #ae78cb }
+li:nth-child(6n + 5) { --accent-color: #7dc7a4 }
+li:nth-child(6n + 6) { --accent-color: #f078c2 }
+
+.aminities li {
+  width: 15rem;
+  --borderS: 2rem;
+  aspect-ratio: 1;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: calc(var(--borderS) + 2.5rem);
+  position: relative;
+}
+
+.aminities li::after{
+  inset: 0;
+  position: absolute;
+  border-radius: 50%;
+  border: var(--borderS) solid var(--bgColor);
+}
+
+.aminities li::after {
+  content: "";
+  filter: drop-shadow(-0.25rem 0.25rem 0.0675rem rgba(0, 0, 0, 0.75)) blur(5px);
+}
+
+.aminities li * { width: 2.5rem }
+.aminities li .icon { font-size: 3rem; color: var(--accent-color); text-align: center }
+.aminities li .title { font-size:20px; font-weight:bold }
+
+/* project highlights */
+.box{
+  color: #fff;
+  background: #2b3c4e;
+  font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.box:hover{ box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+.box img{
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+.box:hover img{
+  opacity: 0.6;
+  filter: grayscale(100%);
+}
+.box .box-content{
+  color: #fff;
+  background: linear-gradient(to right, transparent,transparent,rgba(34,47,61,0.9),#222f3d,#222f3d);
+  text-align: right;
+  width: 100%;
+  padding: 15px 15px 15px 60px;
+  transform: translateY(-50%) scaleY(0);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+}
+.box:hover .box-content{ transform: translateY(-50%) scaleY(1); }
+.box .title{
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+.box .post{
+  font-size: 15px;
+  font-style: italic;
+  text-transform: capitalize;
+  margin: 0 0 5px;
+  display: block;
+}
+.box .icon{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transform: translate(-100%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+.box:hover .icon{ transform: translate(0, -50%); }
+.box .icon li i{
+  color: #222f3d;
+  background: #fff;
+  font-size: 20px;
+  text-align:center;
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  transition: all 0.3s ease;
+}
+.box .icon li  i:hover{ box-shadow: 0 0 5px #222f3d inset; }
+@media only screen and (max-width:990px){
+  .box { margin: 0 0 30px; }
+}
+
+.image-slider{
+  width:700px;
+  height:400px;
+  background-size: 100% 100%;
+  box-shadow: 10px 10px 10px black;
+  animation:slider 80s linear infinite;
+}
+ @keyframes slider {
+  0%{
+    background-image: url(https://www.mantri.in/pinnacle/images/3bhk22.jpg);
+  }
+  33%{
+    background-image: url(https://www.mantri.in/pinnacle/images/3bhk24.jpg);
+  }
+  63%{
+    background-image: url(https://www.mantri.in/pinnacle/images/4bhk1.jpg);
+  }
+  100%{
+    background-image: url(https://www.mantri.in/pinnacle/images/4bhk2.jpg);
+  }
+ }
+
+/* sattva highlights */
+.container-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  /* border: 1px solid black; */
+
+}
+
+.highlights {
+  width: 10em;
+  height: 12em;
+  /* border: 1px solid black; */
+  color: rgb(120, 120, 221);
+  box-shadow: 10px 10px 10px rgb(67, 36, 87);
+  border-radius: 0;
+}
+
+/* sliding images */
+.container-sliding{
+  background: none;
+}
+.container-sliding {
+  width: 100%;
+  margin: auto;
+}
+.carousel-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 1em;
+  border-radius: 5px;
+  overflow: hidden; /* Ensure the image fits within the cell */
+}
+.carousel-cell img {
+  width: 100%; /* Make the image cover the entire cell */
+  height: 100%; /* Make the image cover the entire cell */
+  object-fit: cover; /* Ensure the image covers the entire cell without stretching */
+}
+
+/* amenities */
+.container-amenity{
+background: none;
+}
+
+.container-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  background: none;
+}
+
+.amenities {
+  width: 7em;
+  height: 7em;
+  box-shadow: 10px 10px 10px rgb(67, 36, 87);
+  /* border:1px solid black; */
+  margin: 0 auto;
+  padding: 2em;
+}
+
+/* master and floor plan image */
+.container .fm{
+  background: none;
+}
+.container-plans {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5em 0em;
+  background: none;
+}
+
+.plan {
+  width: 30em;
+  height: 30em;
+  box-shadow: 10px 10px 10px lightblue;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  color: black;
+}
+
+.w-100 {
+  /* border: 1px solid black; */
+  display: block;
+  height: 25em;
+}
+
+.container-price{
+  background: none;
+
+}
+
+/* Brigade */
+
+/* amenities */
+.amenity-card {
+  margin-bottom: 20px;
+}
+
+.amenity-card i {
+  font-size: 36px;
+  color: #3498db;
+}
+
+/* master plan */
+.thumbnail-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+.thumbnail-img:hover {
+  transform: scale(1.1);
+}
+.container-master{
+  background: none;
+}
